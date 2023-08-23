@@ -1,0 +1,12 @@
+header {
+    color: #495E57;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.full {
+    height: 100%;
+    width: 100%;
+}
