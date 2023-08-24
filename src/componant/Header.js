@@ -27,13 +27,13 @@ return(
             {sidebar && (<button onClick={handleClick} className="lg:hidden text-Highlight-1 md:col-start-1  md:order-1 md:top-10 md:left-16 top-3 left-10 md:text-6xl text-4xl relative">
                         <FaTimes />
                     </button>)}
-            <ul className="flex items-center  bg-primary-2 flex-col full lg:hidden h-96 mt-16 md:mt-0 ">
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Home</a></li>
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >About</a></li>
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Menu</a></li>
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Reservation</a></li>
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Order online</a></li>
-                <li className="md:p-10 p-5 md:font-bold md:text-5xl text-3xl md:font-main bg-[#F4CE14] md:w-32 h-10 rounded-lg flex items-center justify-center"><a href="http://192.168.1.13:3000/Little-Lemon" >Login</a></li>
+            <ul className="flex items-center  bg-primary-2 flex-col full lg:hidden h-96 mt-16  ">
+                <li className=" p-5 md:font-bold text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Home</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >About</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Menu</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Reservation</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:font-main"><a href="http://192.168.1.13:3000/Little-Lemon" >Order online</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:font-main bg-[#F4CE14] md:w-32 h-10 rounded-lg flex items-center justify-center"><a href="http://192.168.1.13:3000/Little-Lemon" >Login</a></li>
             </ul>
         </aside>)
     }
