@@ -1,0 +1,16 @@
+import StarRating from "./StarRating";
+
+const TestimoniaisCard = (props)=>{
+    console.log(props.rating)
+    return(
+        <div className="col-span-2 mb-5 bg-Highlight-1 pt-3 rounded-sm md:col-span-3 md:w-52 md:justify-self-center lg:col-span-2 lg:w-full">
+            <StarRating rateing={props.rating} />
+            <div className="flex my-4">
+                <img alt="user_photo" src={props.img} className="w-12 h-12 ml-2"/>
+                <h3 className="self-center ml-3 ">{props.name}</h3>
+            </div>
+            <p className="p-2">{props.descripion}</p>
+        </div>
+    )
+}
+export default TestimoniaisCard;

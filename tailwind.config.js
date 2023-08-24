@@ -7,6 +7,11 @@ module.exports = {
     "./src/componant/Main.js",
     "./src/componant/Footer.js",
     "./src/componant/Card.js",
+    "./src/componant/Specials.js",
+    "./src/componant/Testimoniais.js",
+    "./src/componant/TestimoniaisCard.js",
+    "./src/componant/StarRating.js",
+    "./src/componant/About.js",
   ],
   theme: {
     extend: {

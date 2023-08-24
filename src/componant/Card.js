@@ -1,7 +1,7 @@
 import icon from "../assets/icons_assets/fast-delivery.png"
 const Card = (props) => {
     return (
-    <div className="grid grid-cols-4 gap-x-5 auto-rows-auto md:grid-cols-6 lg:grid-cols-3 lg:w-72" >
+    <div className="grid grid-cols-4 gap-x-5 auto-rows-auto md:grid-cols-6 lg:grid-cols-3 lg:w-72 " >
     <h2 className="col-start-1 col-span-2 text-xl font-bold font-second lg:order-2 lg:mt-3">{props.name}</h2>
     <p className="text-primary-2 col-start-1 col-span-2 h-24 text-ellipsis font-second overflow-hidden  md:col-span-4 md:col-start-1 lg:order-4 lg:my-5 ">{props.descripion}</p>
     <img alt="food-img" src={props.img}
