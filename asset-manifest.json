@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/Little-Lemon/static/css/main.584ed47f.css",
-    "main.js": "/Little-Lemon/static/js/main.18c323e2.js",
+    "main.css": "/Little-Lemon/static/css/main.99afe9bc.css",
+    "main.js": "/Little-Lemon/static/js/main.90ca4f42.js",
     "static/js/787.2ee5c82c.chunk.js": "/Little-Lemon/static/js/787.2ee5c82c.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/Little-Lemon/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/Little-Lemon/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/greek salad.jpg": "/Little-Lemon/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/Little-Lemon/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/Stuck With Mr_ Billionaire - CHARACTERS.jpg": "/Little-Lemon/static/media/Stuck With Mr_ Billionaire - CHARACTERS.fc2506c4d78de4bee3bd.jpg",
+    "static/media/Classic Business Portrait - Bethesda Headshots.jpg": "/Little-Lemon/static/media/Classic Business Portrait - Bethesda Headshots.e6e6f3a2d1b5ca2fe0d7.jpg",
+    "static/media/2.jpg": "/Little-Lemon/static/media/2.1b92e295a247f049e5a7.jpg",
+    "static/media/Premium Photo _ Image of young asian businesswoman working at office.jpg": "/Little-Lemon/static/media/Premium Photo _ Image of young asian businesswoman working at office.fa9114ef173004ffb8ff.jpg",
+    "static/media/download.jpg": "/Little-Lemon/static/media/download.ef70e90beb9b500e3f12.jpg",
     "index.html": "/Little-Lemon/index.html",
-    "main.584ed47f.css.map": "/Little-Lemon/static/css/main.584ed47f.css.map",
-    "main.18c323e2.js.map": "/Little-Lemon/static/js/main.18c323e2.js.map",
+    "main.99afe9bc.css.map": "/Little-Lemon/static/css/main.99afe9bc.css.map",
+    "main.90ca4f42.js.map": "/Little-Lemon/static/js/main.90ca4f42.js.map",
     "787.2ee5c82c.chunk.js.map": "/Little-Lemon/static/js/787.2ee5c82c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.584ed47f.css",
-    "static/js/main.18c323e2.js"
+    "static/css/main.99afe9bc.css",
+    "static/js/main.90ca4f42.js"
   ]
 }
