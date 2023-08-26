@@ -15,7 +15,7 @@ const StarRating = (props)=> {
         
     }
     return(
-        <div className="flex ml-1">
+        <div className="flex ml-1  justify-center ">
         {goodStars}
         {badStars}
         </div>
