@@ -13,6 +13,8 @@ module.exports = {
     "./src/componant/StarRating.js",
     "./src/componant/About.js",
     "./src/componant/Home.js",
+    "./src/pages/HomePage.js",
+
   ],
   theme: {
     extend: {

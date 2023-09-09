@@ -3,6 +3,9 @@ import "./style/header.css"
 import {FaTimes , FaBars} from "react-icons/fa"
 import { useState } from "react"
 import basket from "../assets/icons_assets/Basket.png"
+import { Link } from 'react-router-dom';
+
+
 const Header = ({children})=>{
     const [sidebar ,setSidebar] = useState(false);
     const handleClick = (e) => {
@@ -21,6 +24,7 @@ return(
         <button className="lg:hidden md:order-3 md:col-start-8 justify-self-end order-3 col-start-4 ">
                 <img alt="Basket icon" className="md:w-14 w-9"  src={basket}/>
         </button>
+    
     </header>
     {
         sidebar && (<aside className="scroll-smooth lg:hidden z-50  absolute top-0 left-0 w-[100%] h-[100%] bg-opacity-90 bg-primary-2">
@@ -28,12 +32,12 @@ return(
                         <FaTimes />
                     </button>)}
             <ul className="flex items-center bg-opacity-0 bg-primary-2 flex-col  lg:hidden  mt-16  ">
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >Home</a></li>
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >About</a></li>
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >Menu</a></li>
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >Reservation</a></li>
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >Order online</a></li>
-                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-2 bg-[#F4CE14] md:w-32 h-10 rounded-lg flex items-center justify-center"><a href="https://ebraheemabdelaziz.github.io/Little-Lemon/" >Login</a></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>Home</Link></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>About</Link></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>Menu</Link></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>Reservation</Link></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>Order online</Link></li>
+                <li className=" p-5 md:font-bold text-3xl md:text-4xl font-main text-Highlight-2 bg-[#F4CE14] md:w-32 h-10 rounded-lg flex items-center justify-center hover:scale-110 transition ease-in-out delay-150 duration-100 hover:-translate-y-1"><Link to={"https://EbraheemAbdelAziz.github.io/Little-Lemon/"}>Login</Link></li>
             </ul>
         </aside>)
     }

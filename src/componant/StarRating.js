@@ -8,11 +8,10 @@ const StarRating = (props)=> {
     let goodStars = []
     let badStars = []
     for (let index = 0; index < good; index++) {
-        goodStars.push(<img alt="icon" className="ml-1" src={starIcon} />);
+        goodStars.push(<img alt="icon" className="ml-1" src={starIcon} key={index}/>);
     }
     for (let index = 0; index < bad ; index++) {
-        badStars.push(<img alt="icon" className="ml-1"  src={starIcon2} />);
-        
+        badStars.push(<img alt="icon" className="ml-1"  src={starIcon2} key={index}/>);
     }
     return(
         <div className="flex ml-1  justify-center ">

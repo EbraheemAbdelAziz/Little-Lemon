@@ -1,19 +1,18 @@
 import './App.css';
-import Main from './componant/Main';
-import Header from './componant/Header';
-import Nav from './componant/Nav';
-import Footer from './componant/Footer';
+import BookingPage from './pages/BookingPage';
+import HomePage from './pages/HomePage';
+import { Route , Routes } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
-    <Header>
-      <Nav/>
-    </Header>
-    <Main/>
-    <Footer/>
+    <Routes >
+      <Route path="Little-Lemon/" element={ <HomePage /> }/>
+      <Route path='Little-Lemon/Booking' element={ <BookingPage/> } />
+      {/* <Route path="https://EbraheemAbdelAziz.github.io/Little-Lemon/" element={ <App /> }/> */}
+    </Routes>
     </>
   );
 }
 export default App;
- 

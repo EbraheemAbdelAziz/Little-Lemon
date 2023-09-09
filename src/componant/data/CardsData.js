@@ -12,8 +12,19 @@ const cardsData = [{
     price : "5.00",
     img : img3
 },{
+    name : "Bruchetta",
+    descripion : "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.",
+    price : "5.00",
+    img : img3
+},{
+    name : "Bruchetta",
+    descripion : "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.",
+    price : "5.00",
+    img : img3
+},
+{
     name : "Lemon Desert",
-    descripion : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.",
+    descripion : "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     price : "5.00",
     img : img4
 }]
