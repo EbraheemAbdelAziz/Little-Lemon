@@ -14,6 +14,8 @@ module.exports = {
     "./src/componant/About.js",
     "./src/componant/Home.js",
     "./src/pages/HomePage.js",
+    "./src/componant/BookingForm.js",
+    "./src/pages/BookingPage.js",
 
   ],
   theme: {
@@ -28,9 +30,11 @@ module.exports = {
     },
     fontFamily: {
       'main': ['Markazi Text'],
-      'second': ['Karla'],    
+      'second': ['Karla'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 

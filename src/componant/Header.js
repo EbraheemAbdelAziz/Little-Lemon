@@ -13,7 +13,7 @@ const Header = ({children})=>{
     }
 return(
     <>
-    <header className="scroll-smooth lg:grid md:grid lg:h-28 h-16 lg:grid-cols-12 gap-x-5  lg:px-16 md:px-16 px-10 content-center md:grid-cols-8 md:h-32 grid grid-cols-4    ">
+    <header className="scroll-smooth lg:grid md:grid lg:h-20 h-16 lg:grid-cols-12 gap-x-5  lg:px-16 md:px-16 px-10 content-center md:grid-cols-8 md:h-24 grid grid-cols-4    ">
         <img alt="logo" src={logo} className="lg:object-fill lg:col-start-3 lg:col-end-5 lg:order-1 md:order-2 md:col-start-4 md:col-end-6 md:w-96 order-2 col-start-2 col-span-2 justify-self-center lg:justify-self-start lg:w-44 lg:self-center "  />
         {children}
         {
