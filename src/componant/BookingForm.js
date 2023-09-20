@@ -4,10 +4,10 @@ const BookingForm = (props)=>{
 
     const [alert1 ,setAlert1] = useState()
     const [x ,setX] = useState()
-    const [date ,setDate] = useState()
-    const [time ,setTime] = useState()
-    const [guestsNumber ,setGuestNumber] = useState()
-    const [occasion ,setOccasion] = useState()
+    const [date ,setDate] = useState("")
+    const [time ,setTime] = useState("")
+    const [guestsNumber ,setGuestNumber] = useState("")
+    const [occasion ,setOccasion] = useState("")
     const [reservation, setReservation] = useState({guestsNumber: guestsNumber, date: '', time: '', occasion: occasion});
 
     const xChange = (e)=>{
@@ -37,7 +37,7 @@ const BookingForm = (props)=>{
         setDate("")
         setTime("")
         setGuestNumber("")
-        setOccasion(null)
+        setOccasion("")
     }
     const submitHandle = (e)=>{
         e.preventDefault();
@@ -47,10 +47,10 @@ const BookingForm = (props)=>{
     props.submitReservation(reservation);
     }
     const validateReservation = () => {
-    if (reservation.time !== '' && 
-        reservation.date !== '' && 
-        reservation.guests !== '' && 
-        reservation.ocassion !== '') {
+    if (time !== '' && 
+        date !== '' && 
+        guestsNumber !== '' && 
+        occasion !== '') {
       return true;
     }
 
@@ -63,26 +63,35 @@ const BookingForm = (props)=>{
 return (
     <>
     <img alt="img" src={image} className="col-span-4 md:col-start-3 md:col-span-4 lg:self-center "/>
-    <form onSubmit={submitHandle}  className="col-span-4 mb-10 flex flex-wrap md:col-start-3  md:col-span-4 lg:col-start-7 lg:self-center lg:my-10"> 
+    <form onSubmit={submitHandle}  className="col-span-4 mb-10 flex flex-wrap md:col-start-3  md:col-span-4 lg:col-start-7 lg:self-center "> 
         {
             (alert1 === true) && 
             <div class=" text-center py-4 lg:px-4 w-full">
-        <div class="p-2 bg-green-700 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex w-full" role="alert">
-            <span class="flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-3">Success</span>
-            <span class="font-semibold mr-2 text-left flex-auto">You completed the reservation ✔</span>
-        </div>
-        </div>
+                <div class="p-2 bg-green-700 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex w-full" role="alert">
+                    <span class="flex rounded-full bg-green-900 uppercase px-2 py-1 text-xs font-bold mr-3">Success</span>
+                    <span class="font-semibold mr-2 text-left flex-auto">You completed the reservation </span>
+                    <button onClick={()=>{
+                        setAlert1(false)
+                    }}>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-wite" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+                    </button>
+                </div>
+            </div>
         }
         <label htmlFor="res-date" className="">Choose date</label>
         <input value={date} onChange={dateHandle} type="date" id="res-date" className="px-4 py-3 rounded-full w-full my-2"/>
         <label htmlFor="res-time" className="">Choose time</label>
         <div className="my-3 flex w-full" onChange={xChange}>
-            <input type="radio" value="morning" name="timeSection" className=" block self-center mr-2 "/> 
-            <label>morning</label>
-            <input type="radio" value="afternoon" name="timeSection" className=" block self-center mr-2 ml-3"/>
-            <label>afternoon</label>
-            <input type="radio" value="evening" name="timeSection" className=" block self-center mr-2 ml-3"/> 
-            <label>evening</label>
+            <label className=" block self-center mr-2 ">
+            <input type="radio" value="morning" name="timeSection" className="mr-2" /> 
+                Morning</label>
+            
+            <label className=" block self-center mr-2 ml-3" >
+            <input type="radio" value="afternoon" name="timeSection" className="  mr-2 "/>
+            Afternoon</label>
+            <label className=" block self-center mr-2 ml-3">
+            <input type="radio" value="evening" name="timeSection" className="  mr-2 "/> 
+                Evening</label>
         </div>
         <label htmlFor="res-time" className="">Avalibale times</label>
         <select value={time} onChange={timeHandle} id="res-time " placeholder="Choose time first" className="form-select w-full px-4 py-3 rounded-full my-2">
@@ -122,7 +131,6 @@ return (
             (validateReservation()) ?
             <input type="submit" value="Make Your reservation" className="mx-auto w-full mt-2 px-4 py-3 rounded-full bg-primary-1 font-main hover:cursor-pointer" />
             : <input type="submit" value="Make Your reservation" className="mx-auto w-full mt-2 px-4 py-3 rounded-full bg-primary-2 font-main hover:cursor-not-allowed" disabled/>
-
         }
     </form>
     </>

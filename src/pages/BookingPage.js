@@ -6,7 +6,6 @@ import Nav from "../componant/Nav"
 import React from 'react';
 import { fetchAPI, submitAPI} from "../utilities/API"
 import {  useReducer } from "react";
-import { useNavigate} from "react-router-dom";
 
 
 const updateTimeSlots = (availableTimeSlots, date) => {
@@ -37,7 +36,6 @@ const BookingPage = ()=>{
     dispatchTimeslotsOnDateChange
     ] = useReducer(updateTimeSlots, {morning: [], afternoon: [], evening: []}, initTimeSlots);
 
-    const navigate = useNavigate();
 
   // Handler Function to submit the reservation data to the server
     const submitReservation = (reservation) => {
@@ -49,7 +47,7 @@ const BookingPage = ()=>{
         <Header >
             <Nav />
         </Header>
-        <main className="grid grid-cols-4 gap-x-5 px-10 md:grid-cols-8 lg:grid-cols-12 lg:h-[80vh]">
+        <main className="grid grid-cols-4 gap-x-5 px-10 md:grid-cols-8 lg:grid-cols-12 lg:h-[95vh]">
         <BookingForm 
         submitReservation={submitReservation} 
         availableTimeSlots={availableTimeSlots} 
