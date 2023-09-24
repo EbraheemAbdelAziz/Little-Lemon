@@ -85,7 +85,6 @@ return (
             <label className=" block self-center mr-2 ">
             <input type="radio" value="morning" name="timeSection" className="mr-2" /> 
                 Morning</label>
-            
             <label className=" block self-center mr-2 ml-3" >
             <input type="radio" value="afternoon" name="timeSection" className="  mr-2 "/>
             Afternoon</label>
@@ -130,7 +129,7 @@ return (
         {
             (validateReservation()) ?
             <input type="submit" value="Make Your reservation" className="mx-auto w-full mt-2 px-4 py-3 rounded-full bg-primary-1 font-main hover:cursor-pointer" />
-            : <input type="submit" value="Make Your reservation" className="mx-auto w-full mt-2 px-4 py-3 rounded-full bg-primary-2 font-main hover:cursor-not-allowed" disabled/>
+            : <input type="submit" value="Make Your reservation" className="mx-auto w-full mt-2 px-4 py-3 rounded-full  bg-primary-2 font-main hover:cursor-not-allowed" disabled/>
         }
     </form>
     </>

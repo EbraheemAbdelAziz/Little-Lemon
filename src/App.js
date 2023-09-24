@@ -10,7 +10,6 @@ function App() {
     <Routes >
       <Route path="Little-Lemon/" element={ <HomePage /> }/>
       <Route path='Little-Lemon/Booking' element={ <BookingPage/> } />
-      {/* <Route path="https://EbraheemAbdelAziz.github.io/Little-Lemon/" element={ <App /> }/> */}
     </Routes>
     </>
   );
